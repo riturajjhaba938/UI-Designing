@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #121212;
+  --color-brand-muted: #888888;
+  --color-brand-accent: #3b82f6;
+  --color-brand-destructive: #ef4444;
+}
+
+:root {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+}
